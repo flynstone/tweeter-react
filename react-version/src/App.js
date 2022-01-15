@@ -1,7 +1,7 @@
 import Navigation from './components/Navigation'
 import Profile from './components/Profile'
-import TweetForm from './components/TweetForm'
-import TweetList from './components/TweetList'
+//import TweetForm from './components/TweetForm'
+//import TweetList from './components/TweetList'
 import './App.css';
 
 function App() {
@@ -9,8 +9,6 @@ function App() {
     <div className="App">
       <Navigation />
       <Profile />
-      <TweetForm />
-      <TweetList />
     </div>
   );
 }
