@@ -2,11 +2,12 @@ import React from 'react'; //optional
 
 function TweetForm() {
   const formText = "What are you humming about?";
-
+  const preventDefault = (e) => e.preventDefault();
+  
   return (
 
     <section className="newtweet">
-      <form method="post" action="/tweets" className="newtweet__form">
+      <form method="post" action="/tweets" className="newtweet__form" onSubmit={ preventDefault }>
         <textarea className="form__textarea" placeholder={formText}></textarea>
         <input type="submit" value="Tweet" className="form__input" />
         <span className="form__counter">140</span>
